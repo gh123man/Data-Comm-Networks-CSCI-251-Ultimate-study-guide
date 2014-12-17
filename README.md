@@ -43,6 +43,9 @@ RARP     |   Reverse ARP
 DHCP     |   Dynamic host control Protocol
 
 
+<br>
+<br>
+
 
 # Test 1 solutions
 
@@ -55,7 +58,7 @@ DHCP     |   Dynamic host control Protocol
 * The internet as we know it was proceeded by NSFNet, which was turned over to the private sector on what date?
  > 4/30/95     OR     April 30th 1995
 
-4. TCP/IP model
+* TCP/IP model
 > 1. application
 > 2. transport
 > 3. network
@@ -115,6 +118,7 @@ Steps
 3. cross Product data with with code
 4. add
 
+
         Multiply by 2
 
         2  *   (1,1,0,0,1,1)  |  (0,1,1,0,1,0)
@@ -136,6 +140,35 @@ Steps
 
 
 
-
+<br>
+<br>
 
 # Test 2 solutions
+
+### Hamming Codes
+
+        Even parity
+
+
+               Px              8       4   2 1
+        Code Word    1 0 0 1 1 1 1 1 1 1 0 0 1
+        Take/skip    1   1   1   1   1   1   1
+                         1 1     1 1     1 1
+                     1 1 1       1 1 1 1
+                     1 1 1 1 1 1
+
+
+               P1    1 0 1 1 1 0 1    -    5 - BAD
+               p2    0 1 1 1 0 0      -    3 - BAD
+               p4    1 0 0 1 1 1 1    -    5 - BAD
+               p8    1 0 0 1 1 1      -    4 - GOOD
+
+               1 + 2 + 4 = 7
+
+                                 x
+              BAD    1 0 0 1 1 1 1 1 1 1 0 0 1
+            Fixed    1 0 0 1 1 1 0 1 1 1 0 0 1
+
+Hamming code calculator: http://www.ecs.umass.edu/ece/koren/FaultTolerantSystems/simulator/Hamming/HammingCodes.html
+
+### CRC
