@@ -299,7 +299,7 @@ Hamming code calculator: http://www.ecs.umass.edu/ece/koren/FaultTolerantSystems
 # Test 3 solutions
 
 * Given the following IP and netmask (`42.112.67.212/18`), what is the range of IPs that are valid?
-> Answer: `42.112.64.0 - 42.112.127.255`
+ `42.112.64.0 - 42.112.127.255`
 
 CIDR calculator: http://www.subnet-calculator.com/cidr.php
 
