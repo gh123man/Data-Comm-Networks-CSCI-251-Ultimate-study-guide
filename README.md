@@ -450,7 +450,9 @@ CIDR calculator: http://www.subnet-calculator.com/cidr.php
 > `LONG:ASSS:ADDRESS::SOMETHING`
 
 * How is fragmentation different in IPv4 vs IPv6? How does MTU come into play?
-> LOOK UP
+> - IPv4: fragmentation happens on a router on its way to the destination.
+> - Ipv6: Fragmentation happens on the host, not at the router.
+> - MTU?
 
 * What problem did CIDR aim to solve? How does it accomplish this?
 > LOOK UP
