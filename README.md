@@ -1,5 +1,5 @@
-  Acronyms
-  --------
+# Acronyms
+
 
 Acronym  |   Definition
 -------  |   ----------
@@ -50,13 +50,13 @@ DHCP     |   Dynamic host control Protocol
 # Test 1 solutions
 
 * An internetwork is formed when a computer connects two different networks, what is the computer called?
- > Gateway
+> Gateway
 
 * The techonolgy for NSFNet (National Science Foundation Network) and thus the interenet came from what DoD project?
- > ARPANet
+> ARPANet
 
 * The internet as we know it was proceeded by NSFNet, which was turned over to the private sector on what date?
- > 4/30/95     OR     April 30th 1995
+> 4/30/95     OR     April 30th 1995
 
 * TCP/IP model
 > 1. application
@@ -146,8 +146,8 @@ Steps
 # Test 2 solutions
 
 ### Hamming Codes
-
-        Even parity
+#### Decoding
+      Even Parity
 
 
                Px              8       4   2 1
@@ -169,6 +169,48 @@ Steps
               BAD    1 0 0 1 1 1 1 1 1 1 0 0 1
             Fixed    1 0 0 1 1 1 0 1 1 1 0 0 1
 
+
+
 Hamming code calculator: http://www.ecs.umass.edu/ece/koren/FaultTolerantSystems/simulator/Hamming/HammingCodes.html
 
 ### CRC
+
+        Calculating g(x)
+                 Bit Position   6 5 4 3 2 1 0
+            x^6 + x^5 + x + 1 = 1 1 0 0 0 1 1
+
+            Message: 1011010100
+
+
+            Append len(g(x)) - 1 0s to the message
+                       _______
+            1011010100 0000000  added 0s
+
+            divide (XOR)
+                           __________________________________
+            1 1 0 0 0 1 1 ) 1 0 1 1 0 1 0 1 0 0 0 0 0 0 0 0 0
+                            1 1 0 0 0 1 1 | | | | | | | | | |
+                       XOR  _____________ V | | | | | | | | |
+                            0 1 1 1 0 0 1 1 | | | | | | | | |
+                              1 1 0 0 0 1 1 | | | | | | | | |
+                         XOR  _____________ V V | | | | | | |
+                              0 0 1 0 0 0 0 0 0 | | | | | | |
+                                  1 1 0 0 0 1 1 | | | | | | |
+                             XOR  _____________ V | | | | | |
+                                  0 1 0 0 0 1 1 0 | | | | | |
+                                    1 1 0 0 0 1 1 | | | | | |
+                               XOR  _____________ V | | | | |
+                                    0 1 0 0 1 0 1 0 | | | | |
+                                      1 1 0 0 0 1 1 | | | | |
+                                 XOR  _____________ V | | | |
+                                      0 1 0 1 0 0 1 0 | | | |
+                                        1 1 0 0 0 1 1 | | | |
+                                   XOR  _____________ V | | |
+                                        0 1 1 0 0 0 1 0 | | |
+                                          1 1 0 0 0 1 1 | | |
+                                     XOR  _____________ V V V
+                                          0 0 0 0 0 0 1 0 0 0
+
+                                                      1 0 0 0 is our checksum
+
+              So our message is:     1 0 1 1 0 1 0 1 0 0 0 0 0 1 0 0 0
