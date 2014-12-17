@@ -138,6 +138,9 @@ Physical       |  X  |  X  |  X
 #### Distance vector protocol guide
 ![](http://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Networkabcd.svg/250px-Networkabcd.svg.png)
 
+ asdfasdf
+asfdsadf http://www.masterraghu.com/subjects/np/introduction/unix_network_programming_v1.3/files/02fig02.gif
+
 from C | via A | via B | via C | via D
 ------ | ----- | ----- | ----- | -----
  to A  |  23   |   5   |       |  15
@@ -147,6 +150,10 @@ from C | via A | via B | via C | via D
 
  - http://en.wikipedia.org/wiki/Distance-vector_routing_protocol
  - Dijskstra's is used in some cases?
+
+#### Packet transmission
+![](http://homepages.herts.ac.uk/~comqrgd/docs/network-notes/network-notes-img101.png)
+![](http://www.masterraghu.com/subjects/np/introduction/unix_network_programming_v1.3/files/02fig02.gif)
 
 <br>
 
@@ -174,6 +181,7 @@ link-state routing protocol | router tests network through broadcast and updates
 OSPF            | If two routes have the same cost, load is shared
 BGP             | Internet standard
 Link state protocol | router tests network through a broadcast and updates its routing table based on the type link or condition
+Sequence number | initial sequence number is based on the `k` number of low order bits. You can generate a sequence number from a clock
 
 
 
