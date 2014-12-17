@@ -41,6 +41,7 @@ IGMP     |   Internet Group Management Protocol
 IPv      |   Internet Protocol Version
 RARP     |   Reverse ARP
 DHCP     |   Dynamic host control Protocol
+CSMA     |   Carrier sense multiple access
 
 
 <br>
@@ -214,3 +215,49 @@ Hamming code calculator: http://www.ecs.umass.edu/ece/koren/FaultTolerantSystems
                                                       1 0 0 0 is our checksum
 
               So our message is:     1 0 1 1 0 1 0 1 0 0 0 0 0 1 0 0 0
+
+
+* What is the relationship between the generator polynomials length and the length of the frame that the CRC is being performed on?
+> It has to be smaller
+
+* What are the 4 types of topology that are used in networking?
+> 1. Bus
+> 2. star
+> 3. ring
+> 4. mesh
+
+* The addressing done at the datalink layer uses what types of addresses?
+> Media Access Control
+
+* Name two protocols that use the Random Access Protocol system for sharing a line
+> 1. Aloha
+> 2. CSMA
+
+* What does CSMA stand for, wahts a more common name?
+> 1. Carrier sense multiple access
+> 2. Ethernet
+
+* Bridges operate at what level of the OSI model?
+> Data Link
+
+* What is hamming distance?
+> The number of bit positions 2 code words differ
+
+* If we have a message with 32 bits, how many parity bits do we need to correct 1 bit errors with hamming code?
+> 6
+
+* What layer of the network stack does a router operate on?
+> Network
+
+* How many bits in a MAC Address?
+> 48
+
+* A MAC Address is also known as what kind of address?
+> Hardware Address
+
+* Name the layers in the DoD reference model we use in class, list in order
+> 1. Application
+> 2. Transport
+> 3. Network
+> 4. Data Link
+> 5. Physical
