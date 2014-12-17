@@ -43,7 +43,7 @@ IPv      |   Internet Protocol Version
 RARP     |   Reverse ARP
 DHCP     |   Dynamic host control Protocol
 CSMA     |   Carrier sense multiple access
-MTU      |   maximum transmission unit
+MTU      |   maximum transmission unit (max packet size)
 BMC      |   Biphase mark coding
 CRC      |   cyclic redundancy check
 EGP      |   Exterior Gateway Protocol
@@ -113,6 +113,12 @@ Physical       |  X  |  X  |  X
     - network management
     - Intelligent path selection
     - Is aware of MAC address
+
+#### Handling packet loss
+ 1. Go back `n`
+    - Send packets, go back `n` times where `n` is the # of packets you missed
+ 2. Selective repeat
+    - Only repeats the packets that were not ACK'd
 
 
 ## Definitions
@@ -356,7 +362,7 @@ Hamming code calculator (Not helpful for decoding, only encoding): http://www.ec
 
               So our message is:     1 0 1 1 0 1 0 1 0 0 0 0 0 1 0 0 0
 
-CRC calculator (truncates 5 or less bits so probably useless): http://www4.ncsu.edu/~chou/course/Animations/Calculation%20of%20a%20CRC%20Checksum/crcinit.html
+CRC calculator (truncates after 5 bits): http://www4.ncsu.edu/~chou/course/Animations/Calculation%20of%20a%20CRC%20Checksum/crcinit.html
 
 * What is the relationship between the generator polynomials length and the length of the frame that the CRC is being performed on?
 > It has to be smaller
@@ -450,9 +456,8 @@ CIDR calculator: http://www.subnet-calculator.com/cidr.php
 > `LONG:ASSS:ADDRESS::SOMETHING`
 
 * How is fragmentation different in IPv4 vs IPv6? How does MTU come into play?
-> - IPv4: fragmentation happens on a router on its way to the destination.
-> - Ipv6: Fragmentation happens on the host, not at the router.
-> - MTU?
+> - IPv4: fragmentation happens on a router on its way to the destination. MTU: 64 bytes
+> - Ipv6: Fragmentation happens on the host, not at the router. MTU: 1280 bytes
 
 * What problem did CIDR aim to solve? How does it accomplish this?
 > LOOK UP
