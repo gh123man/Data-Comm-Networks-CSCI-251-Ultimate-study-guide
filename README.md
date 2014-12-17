@@ -50,9 +50,12 @@ EGP      |   Exterior Gateway Protocol
 IGP      |   Interior Gateway Protocol
 RIP      |   Routing Information Protocol
 OSPF     |   Open Shortest Path First
-BGP      |   Border Gateway Protocol
+BGP      |   Border Gateway Protocol (is internet standard)
 iBGP     |   Internal Border Gateway Protocol
 eBGP     |   External Border Gateway Protocol
+RIPng    |   RIP next generation
+IXP      |   Internet exchange point
+AS       |   Autonomous Systems
 
 
 
@@ -137,12 +140,13 @@ Physical       |  X  |  X  |  X
 
 from C | via A | via B | via C | via D
 ------ | ----- | ----- | ----- | -----
- to A  | 23	   | 5     |       | 15
-to B   | 26    |  2	   |       | 12
-to C   |       |       |       |  
-to D   |  33   |   9   |       | 5
+ to A  |  23   |   5   |       |  15
+ to B  |  26   |   2   |       |  12
+ to C  |       |       |       |  
+ to D  |  33   |   9   |       |  5
 
-- http://en.wikipedia.org/wiki/Distance-vector_routing_protocol
+ - http://en.wikipedia.org/wiki/Distance-vector_routing_protocol
+ - Dijskstra's is used in some cases?
 
 <br>
 
@@ -169,6 +173,7 @@ RIP             | Distance vector protocol - First in BSD in 1982 - exchanges ev
 link-state routing protocol | router tests network through broadcast and updates table via link type condition.
 OSPF            | If two routes have the same cost, load is shared
 BGP             | Internet standard
+Link state protocol | router tests network through a broadcast and updates its routing table based on the type link or condition
 
 
 
