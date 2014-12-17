@@ -91,6 +91,21 @@ Physical       |  X  |  X  |  X
  2. Broadcast
  3. Switched
 
+#### Types of Hubs
+ 1. Passive hub
+    - Like a splitter
+    - Signal is partially absorbed
+ 2. Active Hub
+    - Like a passive hub, but powered
+    - Amplifies the signal
+    - Can increase effective distance with a good signal
+    - Acts as a repeater
+ 3. Intelligent Hub
+    - Does signal regeneration
+    - network management
+    - Intelligent path selection
+    - Is aware of MAC address
+
 
 ## Definitions
 Term/Topic      | Definition
@@ -105,6 +120,10 @@ Hamming Distance| Number 9f bit positions two code words differ
 Parity          | Simple error detection constructed by counting bits.
 Hamming Code    | N bit codes that can correct single bit errors
 Checksum        | (happens on link layer)
+Hub             | Provides a single connection between a workstation and itself
+Router          | Connects two networks, Is a computer itself, makes decisions about where packets go
+Fragmentation   | Data Link can impose upper limit of frame size, so packets are fragmented
+
 
 
 
@@ -117,7 +136,7 @@ Checksum        | (happens on link layer)
 * An internetwork is formed when a computer connects two different networks, what is the computer called?
 > Gateway
 
-* The techonolgy for NSFNet (National Science Foundation Network) and thus the interenet came from what DoD project?
+* The technology for NSFNet (National Science Foundation Network) and thus the internet came from what DoD project?
 > ARPANet
 
 * The internet as we know it was proceeded by NSFNet, which was turned over to the private sector on what date?
@@ -129,10 +148,10 @@ Checksum        | (happens on link layer)
 > 3. network
 > 4. physical
 
-* What therom determines the bandwidth of a noiseless channel?
+* What theorem determines the bandwidth of a noiseless channel?
 > Lanknist? Nyquist?
 
-* What therom determines the bandwidth of a noisy channel?
+* What theorem determines the bandwidth of a noisy channel?
 > Shannons
 
 * Name of the transport protocol that is unreliable datagram:
