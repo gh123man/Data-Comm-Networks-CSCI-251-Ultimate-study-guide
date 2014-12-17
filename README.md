@@ -261,3 +261,55 @@ Hamming code calculator: http://www.ecs.umass.edu/ece/koren/FaultTolerantSystems
 > 3. Network
 > 4. Data Link
 > 5. Physical
+
+# Test 3 solutions
+
+* Given the following IP and netmask, what is the range of IPs taht are valid: `42.112.67.212/18`
+> `42.112.64.0 - 42.112.127.255`
+
+CIDR calculator: http://www.subnet-calculator.com/cidr.php
+
+* draw a picture of nat (napt).
+> LOOK IT UP
+
+* what is the size of an IPv6 address in bits?
+> 128
+
+* what is the protocol which is typically used by IPv4 to get an IP address on a LAN?
+> DHCP
+
+* number of bits in an IPv4 Address?
+> 32
+
+* CIDR is also known as?
+> supernetting
+
+* what 3 primary services does IPv4 provide?
+> 1. Routing
+> 2. Addressing
+> 3. Fragmentation
+
+* What is the local loopback Address for IPv4 and IPv6?
+> 1. `127.0.0.1`
+> 2. `::1`
+
+* What are the private IPv4 Blocks?
+> 1. `192.168.x.x`
+> 2. `10.x.x.x`
+> 3. `172.16-31.x.x`
+
+* All Unicast IPv6 Address start with what 3 bits? What possible Hex values does this correspond to (aka, what numbers must unicast addresses start with)?
+> 1. `001x`
+> 2. 2 OR 3
+
+* Link local IPv6 Addresses all start with what 16bit numbers? (in hex)
+> `FE80`
+
+* use IPv6 shorthand to shorten the following address: `LONG:ASSS:ADDRESS:0000:0000:0000:SOMETHING`
+> `LONG:ASSS:ADDRESS::SOMETHING`
+
+* How is fragmentation different in IPv4 vs IPv6? How does MTU come into play?
+> LOOK UP
+
+* What problem did CIDR aim to solve? How does it accomplish this?
+> LOOK UP
