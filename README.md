@@ -164,7 +164,7 @@ BGP             | Internet standard
 > 4. physical
 
 * What theorem determines the bandwidth of a noiseless channel?
-> Lanknist? Nyquist?
+> Nyquist
 
 * What theorem determines the bandwidth of a noisy channel?
 > Shannons
