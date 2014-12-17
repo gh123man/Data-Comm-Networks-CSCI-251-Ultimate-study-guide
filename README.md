@@ -32,14 +32,6 @@ NRZ      |   Non-return-to-zero
 NRZ-I    |   Non-return-to-zero inverted
 
 
-Encodings
----------
-Acronym  |   How-To
--------  |   ------
-NRZ      |   Non-return-to-zero ![NZR](http://upload.wikimedia.org/wikipedia/commons/5/55/NRZcode.png)
-NRZ-I    |   Non-return-to-zero inverted  ![nzri](http://upload.wikimedia.org/wikipedia/commons/e/e4/NRZI_example.png)<br>"One" is represented by a transition of the physical level.<br>"Zero" has no transition.
-
-
 
 
 Test 1 solutions
@@ -95,3 +87,50 @@ what are some properties of an IPv4 Address?
 > 32bit
 > 4 8bit octets
 > dot notation
+
+### Encodings
+
+Acronym    |   How-To
+-------    |   ------
+NRZ        |   Non-return-to-zero ![NZR](http://upload.wikimedia.org/wikipedia/commons/5/55/NRZcode.png)
+NRZ-I      |   Non-return-to-zero inverted  ![nzri](http://upload.wikimedia.org/wikipedia/commons/e/e4/NRZI_example.png)<br>"One" is represented by a transition of the physical level.<br>"Zero" has no transition.
+Manchester<br>(IEEE and nromal) | ![](http://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Manchester_encoding_both_conventions.svg/650px-Manchester_encoding_both_conventions.svg.png)
+Manchester<br>(Differential) | ![](http://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Differential_manchester_encoding.svg/600px-Differential_manchester_encoding.svg.png)<br> 1 - transition on the bit only <br> 0 - transition on the clock and bit
+
+
+Compute CDMA for the following:
+
+`Code0 = (1, -1), data0 = (1,1,0,0,1,1)`
+`Code1 = (1, 1), data1 = (0,1,1,0,1,0)`
+
+Steps
+1. Multiply by 2
+2. subtract 1
+3. cross Product data with with code
+4. add
+
+        Multiply by 2
+
+        2  *   (1,1,0,0,1,1)  |  (0,1,1,0,1,0)
+        =       2,2,0,0,2,2   |   0,2,2,0,2,0
+
+        Subtract 1
+        -1 +   (2, 2, 0, 0, 2, 2)  |  (0, 2, 2, 0, 2, 0)
+        =       1, 1,-1,-1, 1, 1   |  -1, 1, 1,-1, 1,-1
+
+        Cross Product
+                (1,-1) (x) ( 1, 1,-1,-1, 1, 1)          |    (1, 1) (x) (-1, 1, 1,-1, 1,-1)
+        =        1,-1, 1,-1,-1, 1,-1, 1, 1,-1, 1,-1          -1,-1, 1, 1, 1, 1,-1,-1, 1, 1,-1,-1
+
+        Add
+
+                1,-1, 1,-1,-1, 1,-1, 1, 1,-1, 1,-1
+        +      -1,-1, 1, 1, 1, 1,-1,-1, 1, 1,-1,-1
+                0,-2, 2, 0, 0, 2,-2, 0, 2, 0, 0 -2
+
+
+
+
+
+Test 2 solutions
+----------------
