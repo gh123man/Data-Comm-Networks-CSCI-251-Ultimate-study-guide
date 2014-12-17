@@ -48,6 +48,14 @@ BMC      |   Biphase mark coding
 CRC      |   cyclic redundancy check
 EGP      |   Exterior Gateway Protocol
 IGP      |   Interior Gateway Protocol
+RIP      |   Routing Information Protocol
+OSPF     |   Open Shortest Path First
+BGP      |   Border Gateway Protocol
+iBGP     |   Internal Border Gateway Protocol
+eBGP     |   External Border Gateway Protocol
+
+
+
 
 # Various notes
 
@@ -123,6 +131,13 @@ Checksum        | (happens on link layer)
 Hub             | Provides a single connection between a workstation and itself
 Router          | Connects two networks, Is a computer itself, makes decisions about where packets go
 Fragmentation   | Data Link can impose upper limit of frame size, so packets are fragmented
+Host Routing    | if the destination is  a directly connected network, send it there otherwise send packet to default router
+Router routing  | Hosts never forward packets
+Dynamic routing | Routers talk to each other sharing info about connected networks
+RIP             | Distance vector protocol
+link-state routing protocol | router tests network through broadcast and updates table via link type condition.
+OSPF            | If two routes have the same cost, load is shared
+BGP             | Internet standard
 
 
 
