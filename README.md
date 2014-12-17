@@ -42,11 +42,23 @@ IPv      |   Internet Protocol Version
 RARP     |   Reverse ARP
 DHCP     |   Dynamic host control Protocol
 CSMA     |   Carrier sense multiple access
+MTU      |   maximum transmission unit
 
+# Various notes
 
-<br>
-<br>
+### Comparing models
 
+Layers         | OSI | DoD | TCP
+------         | --- | --- | ---
+Application    |  X  |  X  |  X
+Presentation   |  X  |     |
+Session        |  X  |     |
+Transportation |  X  |  X  |  X
+Network        |  X  |  X  |  X
+Data Link      |  X  |  X  |
+Physical       |  X  |  X  |  X
+
+<br><br>
 
 # Test 1 solutions
 
