@@ -339,7 +339,7 @@ Hamming code calculator (Not helpful for decoding, only encoding): http://www.ec
 
               So our message is:     1 0 1 1 0 1 0 1 0 0 0 0 0 1 0 0 0
 
-CRC calulator: http://www4.ncsu.edu/~chou/course/Animations/Calculation%20of%20a%20CRC%20Checksum/crcinit.html
+CRC calculator (truncates 5 or less bits so probably useless): http://www4.ncsu.edu/~chou/course/Animations/Calculation%20of%20a%20CRC%20Checksum/crcinit.html
 
 * What is the relationship between the generator polynomials length and the length of the frame that the CRC is being performed on?
 > It has to be smaller
