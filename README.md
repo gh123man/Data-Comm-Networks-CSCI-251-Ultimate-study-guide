@@ -219,6 +219,7 @@ Steps
 3. cross Product data with with code
 4. add
 
+#### Encoding
 
         Multiply by 2
 
@@ -238,6 +239,22 @@ Steps
                 1,-1, 1,-1,-1, 1,-1, 1, 1,-1, 1,-1
         +      -1,-1, 1, 1, 1, 1,-1,-1, 1, 1,-1,-1
                 0,-2, 2, 0, 0, 2,-2, 0, 2, 0, 0 -2
+
+#### Decoding
+         0,-2, 2, 0, 0, 2,-2, 0, 2, 0, 0 -2
+        (0,-2), (2, 0), (0, 2), (-2, 0), (2, 0), (0 -2) * each by (1, -1) code0
+        (1 -1)  (1 -1)  (1 -1)  ( 1 -1)  (1 -1)  (1 -1)
+         0  2    2  0    0 -2     -2 0    2  0    0  2
+
+         +2 becomes 1
+         -2 becomes 0
+         Ignore the 0s
+         
+         so:  0 2 2 0 0-2-2 0 2 0 0 2
+         Becomes 1 1 0 0 1 1 which is our original data0
+
+         Do the same steps with Code1 to get data1
+
 
 
 
