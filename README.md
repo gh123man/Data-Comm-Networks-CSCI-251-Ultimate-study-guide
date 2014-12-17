@@ -138,8 +138,6 @@ Physical       |  X  |  X  |  X
 #### Distance vector protocol guide
 ![](http://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Networkabcd.svg/250px-Networkabcd.svg.png)
 
- asdfasdf
-asfdsadf http://www.masterraghu.com/subjects/np/introduction/unix_network_programming_v1.3/files/02fig02.gif
 
 from C | via A | via B | via C | via D
 ------ | ----- | ----- | ----- | -----
