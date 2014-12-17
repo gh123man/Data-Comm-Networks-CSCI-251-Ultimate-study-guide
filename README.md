@@ -247,8 +247,32 @@ Steps
 # Test 2 solutions
 
 ### Hamming Codes
-#### Decoding
+
+#### Encoding
       Even Parity
+
+         Message     1 0 0 1 1 0 1 1 0
+     with spaces     1 0 0 1 1 _ 0 1 1 _ 0 _ _
+
+               Px              8       4   2 1
+        Code Word    1 0 0 1 1 _ 0 1 1 _ 0 _ _
+        Take/skip    1   1   1   1   1   1   1
+                         1 1     1 1     1 1
+                     1 1 1       1 1 1 1
+                     1 1 1 1 1 1
+
+
+               P1    1 0 1 0 1 0      -    3 - Use 1
+               p2    0 1 0 1 0        -    2 - Use 0
+               p4    1 0 0 0 1 1      -    3 - Use 1
+               p8    1 0 0 1 1        -    3 - Use 1
+
+
+         ORIGINAL    1 0 0 1 1 _ 0 1 1 _ 0 _ _
+       W/ Hamming    1 0 0 1 1 1 0 1 1 1 0 0 1
+
+#### Decoding
+      Even Parity (I used the same data from above. I flipped bit 7)
 
 
                Px              8       4   2 1
@@ -268,11 +292,10 @@ Steps
 
                                  x
               BAD    1 0 0 1 1 1 1 1 1 1 0 0 1
-            Fixed    1 0 0 1 1 1 0 1 1 1 0 0 1
+            Fixed    1 0 0 1 1 1 0 1 1 1 0 0 1 - Original data :)
 
 
-
-Hamming code calculator: http://www.ecs.umass.edu/ece/koren/FaultTolerantSystems/simulator/Hamming/HammingCodes.html
+Hamming code calculator (Not helpful for decoding, only encoding): http://www.ecs.umass.edu/ece/koren/FaultTolerantSystems/simulator/Hamming/HammingCodes.html
 
 ### CRC
 
@@ -316,6 +339,7 @@ Hamming code calculator: http://www.ecs.umass.edu/ece/koren/FaultTolerantSystems
 
               So our message is:     1 0 1 1 0 1 0 1 0 0 0 0 0 1 0 0 0
 
+CRC calulator: http://www4.ncsu.edu/~chou/course/Animations/Calculation%20of%20a%20CRC%20Checksum/crcinit.html
 
 * What is the relationship between the generator polynomials length and the length of the frame that the CRC is being performed on?
 > It has to be smaller
