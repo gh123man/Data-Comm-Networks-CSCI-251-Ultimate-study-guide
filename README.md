@@ -30,12 +30,21 @@ TDM      |   Time-division multiplexing
 InterNIC |   Internet (NIC) Network Information Center
 NRZ      |   Non-return-to-zero
 NRZ-I    |   Non-return-to-zero inverted
+MAC      |   Media Access Control
+ARP      |   Address Resolution Protocol
+NAT      |   Network Address Translation
+ICMP     |   Internet Control Message Protocol
+IANA     |   Internet assigned numbers authority
+UPnP     |   Universal Plug and play
+CIDR     |   Classless Inter-Domain Routing
+IGMP     |   Internet Group Management Protocol
+IPv      |   Internet Protocol Version
+RARP     |   Reverse ARP
+DHCP     |   Dynamic host control Protocol
 
 
 
-
-Test 1 solutions
------------------
+# Test 1 solutions
 
 An internetwork is formed when a computer connects two different networks, what is the computer called?
  > Gateway
@@ -132,5 +141,4 @@ Steps
 
 
 
-Test 2 solutions
-----------------
+# Test 2 solutions
