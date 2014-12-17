@@ -33,6 +33,7 @@ NRZ-I    |   Non-return-to-zero inverted
 MAC      |   Media Access Control
 ARP      |   Address Resolution Protocol
 NAT      |   Network Address Translation
+NAPT     |   Network Address and Port Translation
 ICMP     |   Internet Control Message Protocol
 IANA     |   Internet assigned numbers authority
 UPnP     |   Universal Plug and play
@@ -44,6 +45,9 @@ DHCP     |   Dynamic host control Protocol
 CSMA     |   Carrier sense multiple access
 MTU      |   maximum transmission unit
 BMC      |   Biphase mark coding
+CRC      |   cyclic redundancy check
+EGP      |   Exterior Gateway Protocol
+IGP      |   Interior Gateway Protocol
 
 # Various notes
 
@@ -58,6 +62,21 @@ Transportation |  X  |  X  |  X
 Network        |  X  |  X  |  X
 Data Link      |  X  |  X  |
 Physical       |  X  |  X  |  X
+
+#### Random Access Protocols
+ 1. Aloha
+ 2. Slotted Aloha
+ 3. CSMA/CD
+ 4. CSMA
+
+#### Network Layer Protocols
+ 1. ICMP
+ 2. IGMP
+ 3. TCP
+ 4. UDP
+ 5. EGP
+ 6. IGP
+
 
 <br><br>
 
