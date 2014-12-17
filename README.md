@@ -90,6 +90,7 @@ Physical       |  X  |  X  |  X
 
 * The internet as we know it was proceeded by NSFNet, which was turned over to the private sector on what date?
 > 4/30/95     OR     April 30th 1995
+
 * TCP/IP model
 > 1. application
 > 2. transport
@@ -132,13 +133,13 @@ Physical       |  X  |  X  |  X
 
 ### Encodings
 
-Acronym    |   How-To
--------    |   ------
-NRZ        |   Non-return-to-zero ![NZR](http://upload.wikimedia.org/wikipedia/commons/5/55/NRZcode.png)
-NRZ-I      |   Non-return-to-zero inverted  ![nzri](http://upload.wikimedia.org/wikipedia/commons/e/e4/NRZI_example.png)<br>"One" is represented by a transition of the physical level.<br>"Zero" has no transition.
-NRZ-L      |   Non-return-to-zero level  ![nrzL](http://upload.wikimedia.org/wikipedia/commons/2/23/Nrz-lb.gif)
-Manchester<br>(IEEE and nromal) | ![](http://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Manchester_encoding_both_conventions.svg/650px-Manchester_encoding_both_conventions.svg.png)
-Manchester<br>(Differential) | ![](http://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Differential_manchester_encoding.svg/600px-Differential_manchester_encoding.svg.png)<br> 1 - transition on the bit only <br> 0 - transition on the clock and bit
+Acronym                                          |   How-To
+-------                                          |   ------
+NRZ                                              |   Non-return-to-zero ![NZR](http://upload.wikimedia.org/wikipedia/commons/5/55/NRZcode.png)
+NRZ-I                                            |   Non-return-to-zero inverted  ![nzri](http://upload.wikimedia.org/wikipedia/commons/e/e4/NRZI_example.png)<br>"One" is represented by a transition of the physical level.<br>"Zero" has no transition.
+NRZ-L                                            |   Non-return-to-zero level  ![nrzL](http://upload.wikimedia.org/wikipedia/commons/2/23/Nrz-lb.gif)
+Manchester<br>(IEEE and nromal)                  | ![](http://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Manchester_encoding_both_conventions.svg/650px-Manchester_encoding_both_conventions.svg.png)
+Manchester<br>(Differential)                     | ![](http://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Differential_manchester_encoding.svg/600px-Differential_manchester_encoding.svg.png)<br> 1 - transition on the bit only <br> 0 - transition on the clock and bit
 Manchester<br>(Differential Biphase mark coding) | ![](http://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Biphase_Mark_Code.svg/518px-Biphase_Mark_Code.svg.png)<br>Biphase mark coding transitions on every positive edge of the clock signal (when the clock goes from 0 to 1) and also translates on the negative edge of the clock signal when the data is a 1.
 
 ### CDMA
