@@ -46,7 +46,7 @@ DHCP     |   Dynamic host control Protocol
 
 # Test 1 solutions
 
-1. An internetwork is formed when a computer connects two different networks, what is the computer called?
+* An internetwork is formed when a computer connects two different networks, what is the computer called?
  > Gateway
 
 * The techonolgy for NSFNet (National Science Foundation Network) and thus the interenet came from what DoD project?
