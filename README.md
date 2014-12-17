@@ -121,6 +121,31 @@ Physical       |  X  |  X  |  X
     - Only repeats the packets that were not ACK'd
 
 
+#### IP routing
+ - Intra AS (autonomus sytem) - inner
+ - intr AS - outer
+
+#### Problems with RIP
+ - No subnetting
+ - long time to stabilize
+ - hop count is a bad metric
+ - max of 15 hops
+
+
+#### Distance vector protocol guide
+![](http://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Networkabcd.svg/250px-Networkabcd.svg.png)
+
+from C | via A | via B | via C | via D
+------ | ----- | ----- | ----- | -----
+ to A  | 23	   | 5     |       | 15
+to B   | 26    |  2	   |       | 12
+to C   |       |       |       |  
+to D   |  33   |   9   |       | 5
+
+- http://en.wikipedia.org/wiki/Distance-vector_routing_protocol
+
+<br>
+
 ## Definitions
 Term/Topic      | Definition
 ----------      | ----------
@@ -140,7 +165,7 @@ Fragmentation   | Data Link can impose upper limit of frame size, so packets are
 Host Routing    | if the destination is  a directly connected network, send it there otherwise send packet to default router
 Router routing  | Hosts never forward packets
 Dynamic routing | Routers talk to each other sharing info about connected networks
-RIP             | Distance vector protocol
+RIP             | Distance vector protocol - First in BSD in 1982 - exchanges every 30 seconds via advertisment - each distance vector can have 25 advertisements.
 link-state routing protocol | router tests network through broadcast and updates table via link type condition.
 OSPF            | If two routes have the same cost, load is shared
 BGP             | Internet standard
