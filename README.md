@@ -77,6 +77,38 @@ Physical       |  X  |  X  |  X
  5. EGP
  6. IGP
 
+#### LAN standards (link layer)
+ `802.xx`
+ 1. `11` - Wireless
+ 2. `3` - Ethernet
+ 3. `13` - Cat6
+ 4. `15` - Wireless personal Area network (Bluetooth)
+ 5. `14` - deprecated cable modem standard
+ 6. `1` - Architecture
+
+#### Media Access Links/Protocols
+ 1. Point to Point
+ 2. Broadcast
+ 3. Switched
+
+
+## Definitions
+Term/Topic      | Definition
+----------      | ----------
+Baud Rate       | Measure of signal change per second
+Data Rate       | Number of bits per second transmitted
+Bounded Media   | Data is confined to a specific pathway
+Unbounded Media | data is transmitted through space
+Twisted Pair    | 2 insulated wires twisted together in a helix
+Multiplexing    | sharing bandwidth on a channel
+Hamming Distance| Number 9f bit positions two code words differ
+Parity          | Simple error detection constructed by counting bits.
+Hamming Code    | N bit codes that can correct single bit errors
+Checksum        | (happens on link layer)
+
+
+
+
 
 <br><br>
 
